@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import java.util.Scanner;
+
 /**
  * Hello world!
  */
@@ -11,9 +13,9 @@ public class App {
         engine.capacity = 1600;
 
 
-        Engine engine2=new Engine();
-        engine2.manufacturer="VW";
-        engine2.capacity=1800;
+        Engine engine2 = new Engine();
+        engine2.manufacturer = "VW";
+        engine2.capacity = 1800;
         Car car = new Car(engine2);
         car.name = "Dacia";
         car.fuelLevel = 60;
@@ -21,7 +23,6 @@ public class App {
         car.doorCount = 5;
         car.maxSpeed = 180;
         car.fuelType = "Gasoline";
-
 
 
         System.out.println(car.name);
@@ -45,5 +46,10 @@ public class App {
         car = car2;
 
 
+        //citesc ce introduce user-ul
+        System.out.println("Please enter some text");
+        Scanner scanner = new Scanner(System.in);
+        String text = scanner.nextLine();
+        System.out.println("Input from user: " + text);
     }
 }
