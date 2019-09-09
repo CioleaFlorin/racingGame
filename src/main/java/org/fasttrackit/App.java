@@ -12,6 +12,8 @@ public class App {
         engine.manufacturer = "Renault";
         engine.capacity = 1600;
 
+        AutoVehicle autoVehicle=new AutoVehicle();
+
 
         Engine engine2 = new Engine();
         engine2.manufacturer = "VW";
