@@ -5,6 +5,7 @@ import java.util.Scanner;
 /**
  * Hello world!
  */
+
 public class App {
     public static void main(String[] args) {
         //one-line comment
@@ -70,14 +71,17 @@ public class App {
 
         //System.out.println("Total count in Car class: "+ Car.totalCount);
 
-        Vehicle hybridCar=new HybridCar();
-        hybridCar.setName("cheater");
+        //Vehicle hybridCar=new HybridCar();
+        //hybridCar.setName("cheater");
         //method implementation from object`s class not from variables`s class
-        hybridCar.accelerate(60,1);
-        System.out.println("Fuel level: " + hybridCar.getFuelLevel());
+        //hybridCar.accelerate(60,1);
+        //System.out.println("Fuel level: " + hybridCar.getFuelLevel());
 
         //varialbe type decides what methods can be invoked
-        ((HybridCar) hybridCar).fly();
+        //((HybridCar) hybridCar).fly();
+
+        Game game=new Game();
+        game.start();
 
 
 

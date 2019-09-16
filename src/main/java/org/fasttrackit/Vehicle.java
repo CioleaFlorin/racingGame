@@ -17,7 +17,6 @@ public class Vehicle {
     }
 
 
-
     public double accelerate(double speed, double durationInHours) {
 
         if ( speed > maxSpeed ) {
