@@ -16,11 +16,20 @@ public class Vehicle {
         totalCount++;
     }
 
-    public double accelerate(double speed){
-        return accelerate(speed,1);
-    }
+
 
     public double accelerate(double speed, double durationInHours) {
+
+        if ( speed > maxSpeed ) {
+            System.out.println("Max speed exceeded");
+            return 0;
+        }
+
+        if (fuelLevel <= 0) {
+            System.out.println("You are out of fuel");
+            return 0;
+        }
+
 
         System.out.println(name + " is accelerating with  " + speed + " km/h" +
                 " for " + durationInHours + " h.");
