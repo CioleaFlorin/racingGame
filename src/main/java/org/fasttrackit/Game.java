@@ -15,14 +15,14 @@ public class Game {
 
 
 
-    public void start(){
+    public void start() throws Exception {
         initializeTrack();
         displayTracks();
         initializeCompetitors();
     }
 
 
-    private void initializeCompetitors(){
+    private void initializeCompetitors() throws Exception {
 
         int competitorCount=getCompetitorCountFromUser();
 
@@ -42,14 +42,15 @@ public class Game {
 
     }
 
-    private int getCompetitorCountFromUser(){
+    private int getCompetitorCountFromUser() throws Exception {
         System.out.println("Please enter number of players.");
         Scanner scanner=new Scanner(System.in);
         try {
             return scanner.nextInt();
         }
         catch (InputMismatchException e){
-            throw new RuntimeException("You entered an invalid number");
+            throw new Exception("You entered an invalid number");
+
         }
         finally {
             System.out.println("Finally block is always executed");

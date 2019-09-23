@@ -7,7 +7,7 @@ import java.util.Scanner;
  */
 
 public class App {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
         //one-line comment
         //Engine engine = new Engine();
         //engine.manufacturer = "Renault";
