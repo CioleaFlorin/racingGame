@@ -28,9 +28,11 @@ public class Game {
 
         while ( winnerNotKnown && competitorWithoutFuel < competitors.size()){
 
+            System.out.println("New round...\n");
 
         //for-each or enhance for loop
         for(Vehicle vehicle:competitors){
+            System.out.println("It's "+ vehicle.getName()+" turn.");
             double speed= getAccelerationSpeedFromUser();
             vehicle.accelerate(speed,1);
 
